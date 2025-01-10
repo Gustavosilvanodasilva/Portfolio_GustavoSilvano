@@ -87,48 +87,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
 @keyframes php-email-form-loading {
   0% {
     transform: rotate(0deg);
@@ -292,14 +250,8 @@ h6 {
 }
 
 /* Navmenu - Mobile */
-@media (max-width: 480px) {
-  body {
-    font-size: 12px; /* Reduz o tamanho da fonte para telas muito pequenas */
-  }
-
-  .menu {
-    display: none; /* Esconde o menu em telas muito pequenas */
-  }
+/* Navmenu - Mobile */
+@media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
@@ -310,7 +262,8 @@ h6 {
   }
 
   .navmenu {
-    display: none;
+    padding: 0;
+    z-index: 9997;
   }
 
   .navmenu ul {
@@ -422,15 +375,47 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
+} 
 
-  .container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+/* Navmenu - Mobile */
+/* Ajuste geral para dispositivos móveis */
+@media (max-width: 768px) {
+  #hero .content {
+    text-align: center; /* Centralizar o texto */
   }
-  
-  .item {
-    flex: 1 1 calc(50% - 10px); /* Ajusta o tamanho dos itens */
-    margin: 5px; /* Margem entre os itens */
+
+  #hero .image {
+    margin: 0 auto;
+    width: 80%; /* Reduzir o tamanho da imagem */
+    text-align: center;
+  }
+
+  #hero .image img {
+    max-width: 100%;
+    height: auto; /* Garantir responsividade da imagem */
+    border-radius: 50%; /* Manter bordas arredondadas */
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column; /* Empilhar os botões verticalmente */
+    gap: 10px; /* Espaçamento entre botões */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-links {
+    margin-top: 20px;
+    justify-content: center; /* Centralizar os links sociais */
+  }
+
+  .social-links a {
+    font-size: 1.5rem; /* Aumentar os ícones */
+    margin: 0 10px; /* Espaçamento entre os ícones */
+  }
+
+  .hero .container {
+    padding: 20px; /* Espaçamento interno para melhorar o visual */
   }
 }
 
@@ -700,10 +685,8 @@ section,
 .hero .highlight {
   color: #ffd700;
 }
-
 .hero .buttons {
   margin-bottom: 20px;
-  padding: 10px 20px;
 }
 
 .hero .btn-primary,
@@ -1493,11 +1476,4 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
-}
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
 }
