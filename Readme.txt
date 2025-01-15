@@ -1,6 +1,3 @@
-Thanks for downloading this template!
+Gustavo Silvano – Analista de Sistemas
 
-Template Name: Folio
-Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Sou formado em Análise e Desenvolvimento de Sistemas e estou cursando pós-graduação em Gestão de Projetos. Atuo na área ia com foco no desenvolvimento de soluções inovadoras e na gestão de projetos de software que entreguem valor ao negócio.
